@@ -14,6 +14,8 @@ app.get('/hollywood-studios', controllers.hollywoodStudios);
 
 app.get('/magic-kingdom', controllers.magicKingdom);
 
+app.get('/weather', controllers.weather);
+
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
