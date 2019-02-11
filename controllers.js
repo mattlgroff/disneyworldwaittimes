@@ -32,7 +32,7 @@ module.exports = {
           .get(forecast)
           .then(({ data }) => {
             const { properties } = data;
-            res.json({ properties });
+            res.json(properties);
           })
           .catch(err => res.json({ error }));
       })
